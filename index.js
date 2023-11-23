@@ -15,6 +15,7 @@ const db = mysql.createConnection ({
     password: 'app2027',
     database: 'myBookshop'
 });
+
 // Connect to the database
 db.connect((err) => {
     if (err) {
@@ -23,8 +24,6 @@ db.connect((err) => {
     console.log('Connected to database');
 });
 global.db = db;
-
-
 
 // Set up css
 app.use(express.static(__dirname + '/public'));
