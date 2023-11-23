@@ -100,7 +100,7 @@ module.exports = function(app, shopData) {
                 +`
                 <script>
                 setTimeout(function() {
-                    window.location.href = '/list';
+                    window.location.href = './list';
                 }, 2000);
                 </script>`
             );
